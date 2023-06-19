@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Encabezado */
+header,
+footer {
+    background-image: url(../img/duki\ logo\ 1.jpg);
+    height: 300px;
+    background-size: contain;
+    background-repeat: repeat;
+    padding: 1rem
+}
+
+.titulo {
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    color: rgb(95, 21, 165);
+}
+
+header nav ul {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
