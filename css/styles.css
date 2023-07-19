@@ -1,17 +1,188 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 7 | @import "./pages/tienda";
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   scss\main.scss 7:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502  @import \"./pages/tienda\";\d\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 7:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  margin: 0;
+}
+
+header {
+  background-color: rgb(66, 0, 100);
+}
+
+.navbar {
+  background-color: rgb(66, 0, 100);
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+.navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.368);
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    font-size: 1.5rem;
+  }
+}
+footer {
+  background-color: rgb(66, 0, 100);
+}
+
+footer h3 {
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  footer h3 {
+    font-size: 2rem;
+  }
+}
+footer ol, ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  color: black;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-redes {
+  color: aliceblue;
+}
+
+main {
+  background-color: rgb(0, 0, 0);
+}
+main p {
+  font-family: "PT Serif", serif;
+  color: azure;
+}
+main h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: rgba(88, 0, 100, 0.927);
+  display: flex;
+  justify-content: center;
+}
+
+.img-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  main h2 {
+    font-size: 2.5rem;
+  }
+  main p {
+    font-size: 1.5rem;
+  }
+  .img-article {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .text-article {
+    width: 70%;
+  }
+  .container-articlemain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container-tienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 100%;
+  margin: 0;
+}
+
+.card-tienda {
+  max-width: 100%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-tienda {
+  color: #e8e5e8;
+  font-size: 1rem;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 33px;
+  box-shadow: 1px 1px 8px #454245;
+  text-shadow: 4px 1px 4px #635963;
+  border: solid #620265 1px;
+  background: blueviolet;
+}
+
+.img-galeria {
+  margin-bottom: 1rem;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-galeria {
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */
