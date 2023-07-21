@@ -80,19 +80,14 @@ footer ul li {
   align-items: center;
 }
 
-.card-redes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .redes-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.item-redes {
+.listitem-redes {
   color: aliceblue;
 }
 
@@ -109,6 +104,13 @@ main h2 {
   color: rgba(88, 0, 100, 0.927);
   display: flex;
   justify-content: center;
+}
+
+.inicio-img {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  box-shadow: 0px 0px 100px 0px rgba(164, 7, 211, 0.75);
 }
 
 .img-article {
@@ -151,6 +153,8 @@ main h2 {
 
 .card-tienda {
   max-width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 100px 0px rgba(164, 7, 211, 0.75);
 }
 
 .card-info {
@@ -172,6 +176,96 @@ main h2 {
   background: blueviolet;
 }
 
+.container-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.darkTable {
+  font-family: Impact, Charcoal, sans-serif;
+  border: 2px solid #000000;
+  background-color: #4A4A4A;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table.darkTable .tablecell,
+.table.darkTable .tablehead {
+  border: 1px solid #4A4A4A;
+  padding: 3px 2px;
+}
+
+.table.darkTable .tablebody .tablecell {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(66, 0, 100);
+  background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(66, 0, 100) 100%, rgb(0, 212, 255) 100%);
+}
+
+.table.darkTable .tableheader {
+  background: #000000;
+  border-bottom: 3px solid #000000;
+}
+
+.table.darkTable .tableheader .tablehead {
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  border-left: 2px solid #4A4A4A;
+  background-color: rgb(66, 0, 100);
+  background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(66, 0, 100) 100%, rgb(0, 212, 255) 100%);
+}
+
+.table.darkTable .tableheader .tablehead:first-child {
+  border-left: none;
+}
+
+.darkTable {
+  font-size: 12px;
+}
+
+/* DivTable.com */
+.table {
+  margin-bottom: 0;
+  display: table;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(66, 0, 100) 100%, rgb(0, 212, 255) 100%);
+}
+
+.tablerow {
+  display: table-row;
+}
+
+.tableheader {
+  display: table-header-group;
+}
+
+.tablecell,
+.tablehead {
+  display: table-cell;
+}
+
+.tablebody {
+  display: table-row-group;
+}
+
+.btn-table {
+  color: #e8e5e8;
+  font-size: 13px;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 33px;
+  box-shadow: 1px 1px 8px #454245;
+  text-shadow: 4px 1px 4px #635963;
+  border: solid #a6a4a7 1px;
+  background: black;
+}
+
 .img-galeria {
   margin-bottom: 1rem;
   object-fit: cover;
@@ -183,6 +277,20 @@ main h2 {
 .video-galeria {
   margin-bottom: 1rem;
   object-fit: cover;
+}
+
+.container-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.form-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
