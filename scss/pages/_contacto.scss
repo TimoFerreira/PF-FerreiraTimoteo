@@ -1,21 +1,23 @@
-.container-contacto{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
+$color_1: aliceblue;
 
-.container-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container-contacto {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
-
-.img-contacto{
-    @media (min-width: 992px) {
-        height: 600px;
-    }
-    
+.container-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.label {
+	color: $color_1;
+}
+@media (min-width: 992px) {
+	.img-contacto {
+		height: 600px;
+	}
 }

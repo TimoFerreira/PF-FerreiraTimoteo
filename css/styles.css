@@ -49,22 +49,18 @@ header {
 footer {
   background-color: rgb(66, 0, 100);
 }
-
 footer h3 {
   font-size: 1rem;
 }
-
-@media (min-width: 992px) {
-  footer h3 {
-    font-size: 2rem;
-  }
-}
-footer ol, ul {
+footer ol {
   padding-left: 0;
 }
-
 footer ul li {
   color: black;
+}
+
+ul {
+  padding-left: 0;
 }
 
 .container-footer {
@@ -91,6 +87,11 @@ footer ul li {
   color: aliceblue;
 }
 
+@media (min-width: 992px) {
+  footer h3 {
+    font-size: 2rem;
+  }
+}
 main {
   background-color: rgb(0, 0, 0);
 }
@@ -98,7 +99,7 @@ main p {
   font-family: "PT Serif", serif;
   color: azure;
 }
-main h2 {
+main h1, main h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.5rem;
   color: rgba(88, 0, 100, 0.927);
@@ -106,39 +107,39 @@ main h2 {
   justify-content: center;
 }
 
-.inicio-img {
+.img-inicio {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   padding: 0;
   box-shadow: 0px 0px 100px 0px rgba(164, 7, 211, 0.75);
 }
 
-.img-article {
+.article-img {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.article-text {
+  width: 70%;
+}
+
+.container-articlemain {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 @media (min-width: 992px) {
-  main h2 {
+  main h1, main h2 {
     font-size: 2.5rem;
   }
   main p {
     font-size: 1.5rem;
-  }
-  .img-article {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-  }
-  .text-article {
-    width: 70%;
-  }
-  .container-articlemain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 .container-tienda {
@@ -191,26 +192,27 @@ main h2 {
   height: 200px;
   text-align: center;
   border-collapse: collapse;
+  font-size: 12px;
 }
 
-.table.darkTable .tablecell,
+.table.darkTable .tablecell {
+  border: 1px solid #4A4A4A;
+  padding: 3px 2px;
+}
 .table.darkTable .tablehead {
   border: 1px solid #4A4A4A;
   padding: 3px 2px;
 }
-
 .table.darkTable .tablebody .tablecell {
   font-size: 13px;
   color: rgb(255, 255, 255);
   background-color: rgb(66, 0, 100);
   background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(66, 0, 100) 100%, rgb(0, 212, 255) 100%);
 }
-
 .table.darkTable .tableheader {
   background: #000000;
   border-bottom: 3px solid #000000;
 }
-
 .table.darkTable .tableheader .tablehead {
   font-size: 15px;
   font-weight: normal;
@@ -220,16 +222,10 @@ main h2 {
   background-color: rgb(66, 0, 100);
   background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(66, 0, 100) 100%, rgb(0, 212, 255) 100%);
 }
-
 .table.darkTable .tableheader .tablehead:first-child {
   border-left: none;
 }
 
-.darkTable {
-  font-size: 12px;
-}
-
-/* DivTable.com */
 .table {
   margin-bottom: 0;
   display: table;
@@ -245,7 +241,10 @@ main h2 {
   display: table-header-group;
 }
 
-.tablecell,
+.tablecell {
+  display: table-cell;
+}
+
 .tablehead {
   display: table-cell;
 }
@@ -266,7 +265,7 @@ main h2 {
   background: black;
 }
 
-.img-galeria {
+.galeria-img {
   margin-bottom: 1rem;
   object-fit: cover;
   display: flex;
@@ -274,7 +273,7 @@ main h2 {
   align-items: center;
 }
 
-.video-galeria {
+.galeria-video {
   margin-bottom: 1rem;
   object-fit: cover;
 }
@@ -282,7 +281,7 @@ main h2 {
 .container-contacto {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -292,6 +291,10 @@ main h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.label {
+  color: aliceblue;
 }
 
 @media (min-width: 992px) {

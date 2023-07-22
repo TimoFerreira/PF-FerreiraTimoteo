@@ -1,9 +1,12 @@
+$background-color_1: rgb(66, 0, 100);
+$background-color_2: rgba(0, 0, 0, 0.368);
+
 header {
-    background-color: rgb(66, 0, 100);
+    background-color: $background-color_1;
 }
 
 .navbar {
-    background-color: rgb(66, 0, 100);
+    background-color: $background-color_1;
 }
 
 .navbar-nav {
@@ -15,7 +18,7 @@ header {
 }
 
 .navbar-toggler {
-    background-color: rgba(0, 0, 0, 0.368);
+    background-color: $background-color_2;
 }
 
 @media (min-width: 992px) {

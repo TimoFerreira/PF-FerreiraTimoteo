@@ -1,45 +1,48 @@
+$color_1: black;
+$color_2: aliceblue;
+$background-color_1: rgb(66, 0, 100);
+
 footer {
-    background-color: rgb(66, 0, 100);
+	background-color: $background-color_1;
+	h3 {
+		font-size: 1rem;
+	}
+	ol {
+		padding-left: 0;
+	}
+	ul {
+		li {
+			color: $color_1;
+		}
+	}
 }
-
-footer h3{
-    font-size: 1rem;
+ul {
+	padding-left: 0;
 }
-
-@media(min-width: 992px){
-    footer h3{
-        font-size: 2rem;
-    }
+.container-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
-
-footer ol, ul{
-    padding-left: 0;
+.logo-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-footer ul li{
-    color: black;
+.redes-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-
-.container-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.listitem-redes {
+	color: $color_2;
 }
-
-.logo-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.redes-list{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-}
-
-.listitem-redes{
-    color: aliceblue;
+@media (min-width: 992px) {
+	footer {
+		h3 {
+			font-size: 2rem;
+		}
+	}
 }
