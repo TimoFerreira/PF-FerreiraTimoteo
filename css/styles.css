@@ -282,15 +282,22 @@ main h2 {
 .container-contacto {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.form-item {
+.container-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 992px) {
+  .img-contacto {
+    height: 600px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

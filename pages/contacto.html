@@ -52,26 +52,48 @@
     </header>
 
     <!-- Main -->
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-6 container-contacto">
-                <img src="../img/duki 10.jpg" alt="Foto Duki">
-            </div>
-            <div class="col-12 col-lg-6 container-contacto">
-                <div>
-                    <h2>Contactanos</h2>
+    <main class="bg bg-gradient">
+
+        <section class="container">
+
+            <div class="row">
+
+                <div class="col-12 col-lg-6 container-contacto">
+                    <img class="img-contacto" src="../img/duki 10.jpg" alt="Foto Duki">
+                </div>
+
+                <div class="col-12 col-lg-6 mt-5">
                     <div class="container">
-                        <form class="col">
-                            <input class="col-12 form-item" type="text" name="Nombre" value="Introducir Nombre">
-                            <input class="col-12 form-item" type="email" name="Email" value="Introducir Email">
-                            <textarea class="col-12 form-item" name="Texto" id="" cols="30" rows="10"></textarea>
-                            <input class="col-4 btn-form" type="reset" value="Restablecer">
-                            <input class="col-4 btn-form" type="submit" value="Enviar">
+                        <form class="container-form">
+                            <div class="col-8">
+                                <label for="nameinput" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nameinput" placeholder="Escribe tu Nombre">
+                            </div>
+                            <div class="col-8">
+                                <label for="emailinput" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailinput" placeholder="Escribe tu Email">
+                            </div>
+
+                            <div class="col-8 mb-3">
+                                <label for="textinput" class="form-label">Texto</label>
+                                <textarea id="textarea" class="form-control" placeholder="Escribe el texto" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="reset" class="btn btn-primary">Restablecer</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
+
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
